@@ -1,0 +1,17 @@
+body{
+    background-image: url("../images/hotsite-03.jpg");
+}
+
+.container-root{
+    padding: 100px;
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+h1{
+    font-size: 7.5rem !important;
+}
