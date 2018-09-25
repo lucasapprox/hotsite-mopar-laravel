@@ -3,12 +3,23 @@
 
 {!!Form::open(array('url'=>'clients', 'method'=>'POST', 'autocomplete'=>'off', 'role' => 'search'))!!}
     
-    
+   
     <!-- ... -->
     <p><b>PREENCHA OS CAMPOS COM SEUS DADOS PESSOAIS</b></p>
+    <div>
+        @if($errors->any())
+            <ul class="alert alert-danger">
+                
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li> 
+                @endforeach()
+                
+            </ul>
+        @endif()
+    </div>
     <div class="form-group input-group mb-3">
         <div  class="form-group">
-            <input type="text" class="form-group" id="name" name="name" value="{{ old('name') }}" placeholder="DIGITE SEU NOME">
+            <input type="text" class="form-group" id="nome" name="name" value="{{ old('name') }}" placeholder="DIGITE SEU NOME">
         </div>
         <div>
             <input type="text" class="form-group" id="registration" name="registration" value="{{ old('registration') }}" placeholder="DIGITE SUA MATRICULA">
@@ -16,7 +27,7 @@
         <div class="row">
             
             <div class="col-6">
-                {!! Form::select('location',['value' => 'Escolha', 'MG' => 'MG', 'SP' => 'SP', 'RJ' => 'RJ' ]);!!}
+                {!! Form::select('location',['' => 'Escolha', 'MG' => 'MG', 'SP' => 'SP', 'RJ' => 'RJ' ]);!!}
                 {{-- <select name="" id="location" name="location" value="{{ old('location') }}" placeholder="SELECIONE SUA UNIDADE">
                         <option selected>Escolha...</option>
                         <option value="MG" {{old('location') == "MG" ?'selected="selected"': ''}}>MG</option>
@@ -26,7 +37,7 @@
                 {{-- <input type="select" id="shirtSize" name="shirtSize" value="{{ old('shirtSize') }}" placeholder="TAMANHO DA SUA CAMISA"> --}}
             </div>
             <div class="col-6">
-                    {!! Form::select('shirtSize',['P' => 'P', 'M' => 'M', 'G' => 'G', 'GG' => 'GG' ]);!!}
+                    {!! Form::select('shirtSize',['' => 'Escolha', 'M' => 'M', 'G' => 'G', 'GG' => 'GG' ]);!!}
                 {{-- <select name="" id="shirtSize" name="shirtSize" value="{{ old('shirtSize') }}" placeholder="SELECIONE SUA UNIDADE">
                         <option selected>Escolha...</option>
                         <option value="P"> P</option>

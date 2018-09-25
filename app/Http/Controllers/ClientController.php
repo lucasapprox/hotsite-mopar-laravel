@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
+use App\Http\Requests;
+
 class ClientController extends Controller
 {
     /**
@@ -35,9 +37,16 @@ class ClientController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Requests\ClientRequest $request)
     {
         //
+        // $this->validate($request, [
+        //     'name' => 'required',
+        //     'registration' => 'required|unique:clients',
+        //     'location' => 'required',
+        //     'shirtSize' => 'required',
+        //     'word' => 'required|max:15'
+        // ]);
         Client::create($request->all());
         return redirect()->to('/');
 
