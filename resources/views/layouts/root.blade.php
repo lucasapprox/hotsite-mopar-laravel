@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/js.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -22,8 +23,10 @@
     <!-- Styles -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     <link href="{{ asset('css/root.css') }}" rel="stylesheet">
+    
 
     {{-- Bootstrap --}}
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
     
     {{-- background-image --}}
@@ -34,19 +37,19 @@
 <link href="{{ asset('css/root.css') }}" rel="stylesheet">
 <body>
     <div id="app" class="container-fluid container-root">
-        <div class="h1-root row col-12">
+        <div class="h1-root row">
             <div class="col-8">
                 <h1><p>PRA VOCÊ</p><p><b>O QUE SIGNIFICA</b></p><P>A MOPAR?</P></h1>
             </div>
             <div class="col-4">
-                <div>
+                <div class="align-item-end justify-content-end">
                     <img id="image1" src="images/itens1.png" alt="">
                 </div>
             </div>
             
         </div>
         <div class="row">
-            <main class="py-4 col col-6">
+            <main class="py-4 col-6">
                 @yield('content')
             </main>
             <div class="col-6">

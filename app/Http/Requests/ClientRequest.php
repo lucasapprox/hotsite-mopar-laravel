@@ -26,6 +26,7 @@ class ClientRequest extends FormRequest
     {
         return [
             //
+            
             'name' => 'required',
             'registration' => 'required|unique:clients',
             'location' => 'required',

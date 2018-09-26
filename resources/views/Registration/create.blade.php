@@ -22,7 +22,7 @@
         @endif()
     </div>
     <div class="">
-        <div class="form-group justify-content-center">
+        <div class="form-group justify-content-center" id="submitButton">
             <div  class="form-group">
                 <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="DIGITE SEU NOME">
             </div>
@@ -63,7 +63,8 @@
             <div class="form-group">
                 <input type="text" class="form-control" id="word" name="word" value="{{ old('word') }}" placeholder="DIGITE UMA PALAVRA QUE REPRESENTA SEU SENTIMENTO COM A MOPAR">
             </div>
-            <button type="submit" class="btn btn-custom">ENVIAR PALAVRA</button>        </div>
+            <button class="btn btn-custom" onclick="oneWord()">ENVIAR PALAVRA</button>       
+        </div>
     </div>
     
 {{Form::close()}}

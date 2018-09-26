@@ -16,6 +16,4 @@ Route::get('/', function () {
 });
 
 Route::resource('/clients', 'ClientController');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
