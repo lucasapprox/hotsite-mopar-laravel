@@ -4,20 +4,21 @@
 
 body{
     background-image: url("../images/hotsite-03.jpg");
+    
 }
 
 .container-root{
     padding: 100px;
     width: 100%;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-right: auto;
     margin-left: auto;
 
 }
 
 h1{
-    font-size: 5.5rem !important;
+    font-size:300%;
 }
 
 select{
@@ -63,16 +64,17 @@ select{
     color: rgba(252, 252, 252, 1);
 }
 
-#image1{
+.img{
+    position: relative;
+    right: 0px;
+    padding: 10px;
     
-    position:absolute;
-    top: 30%;
-    right: -5%; 
+    
 }
-
+/*
 #image2{
     
     position:absolute;
     top: 60%;
     right: 0%; 
-}
+} */

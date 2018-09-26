@@ -11,13 +11,13 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/js.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/js.js') }}" defer></script> --}}
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
 
 
     <!-- Styles -->
@@ -25,10 +25,10 @@
     <link href="{{ asset('css/root.css') }}" rel="stylesheet">
     
 
-    {{-- Bootstrap --}}
+    {{-- Alert --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
-    
+
+   
     {{-- background-image --}}
     <style>
         background-image:url({{url('images/hotsite-03.jpg')}});
@@ -36,29 +36,59 @@
 </head>
 <link href="{{ asset('css/root.css') }}" rel="stylesheet">
 <body>
-    <div id="app" class="container-fluid container-root">
-        <div class="h1-root row">
-            <div class="col-8">
+        <div class="container-fluid">
+                <div class="row container-root">
+                    <div class="col-md-8">
+                            <h1><p>PRA VOCÊ</p><p><b>O QUE SIGNIFICA</b></p><P>A MOPAR?</P></h1>
+                    </div>
+                    <div class="col-md-4">
+                            
+                            <img class="img" id="image1" src="images/itens1.png" alt="">
+                        
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <main class="">
+                            @yield('content')
+                        </main>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <img class="img" id="image2" src="images/branca.png" alt="">
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+
+
+
+    {{-- <div id="app" class="container-root">
+        <div class="h1-root">
+            <div class="col-8 col-lg-8 col-sm-12 col-xs-12">
                 <h1><p>PRA VOCÊ</p><p><b>O QUE SIGNIFICA</b></p><P>A MOPAR?</P></h1>
             </div>
-            <div class="col-4">
-                <div class="align-item-end justify-content-end">
+            <div class="col-4 col-lg-4 col-sm-12">
+                <div class="">
                     <img id="image1" src="images/itens1.png" alt="">
+                    logo
                 </div>
             </div>
             
         </div>
         <div class="row">
-            <main class="py-4 col-6">
+            <main class="py-4 col col-lg-6 col-sm-12">
                 @yield('content')
             </main>
-            <div class="col-6">
+            <div class="col col-lg-6 col-sm-12">
                 <img id="image2" src="images/branca.png" alt="">
             </div>
         </div>
         
         
         
-    </div>
+    </div> --}}
 </body>
 </html>

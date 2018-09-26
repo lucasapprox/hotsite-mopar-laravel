@@ -31,7 +31,7 @@ class ClientRequest extends FormRequest
             'registration' => 'required|unique:clients',
             'location' => 'required',
             'shirtSize' => 'required',
-            'word' => 'required|max:15'
+            'word' => 'required|max:20|alpha'
 
         ];
     }
@@ -43,9 +43,11 @@ class ClientRequest extends FormRequest
            'registration.required' => "O campo matricula tem que ser preenchido",
            'location.required' => "O campo localidade tem que ser preenchido",
            'shirtSize.required' => "O campo Tamanho da Camisa tem que ser preenchido",
-           'word.required' => "A palavra tem que ser preenchida",
+           'word.required' => "A palavra de sentimento tem que ser preenchida",
            "word.max" => "So pode ser incluida uma unica palavra",
-           "registration.unique" => "Matricula ja inserida"
+           "registration.unique" => "Matricula ja inserida",
+           "word.alpha" => "So pode ser cadastrado um unico sentimento"
+
        ];
     }
 }

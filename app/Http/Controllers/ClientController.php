@@ -39,15 +39,9 @@ class ClientController extends Controller
      */
     public function store(Requests\ClientRequest $request)
     {
-        //
-        // $this->validate($request, [
-        //     'name' => 'required',
-        //     'registration' => 'required|unique:clients',
-        //     'location' => 'required',
-        //     'shirtSize' => 'required',
-        //     'word' => 'required|max:15'
-        // ]);
+        
         Client::create($request->all());
+        session()->flash('flash_message', 'Cadastro efetuado com sucesso');
         return redirect()->to('/');
 
         // $clients = new Client();
