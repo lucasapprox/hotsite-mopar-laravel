@@ -11,7 +11,7 @@
     <!-- ... -->
     
     <div class="container-fluid">
-            <p><b>PREENCHA OS CAMPOS COM SEUS DADOS PESSOAIS</b></p>
+            <p class="customLabel"><b>PREENCHA OS CAMPOS COM SEUS DADOS PESSOAIS</b></p>
             <div>
                 @if($errors->any())
                     <ul class="alert alert-danger">
@@ -32,7 +32,7 @@
             </div>
             <div class="row form-group">
                 
-                <div class="col-6">
+                <div class="form-group col-sm-12 col-md-6">
                     {!! Form::select('location',['' => 'SELECIONE SUA UNIDADE', 
                     'Betim - Armazém' => 'Betim - Armazém', 
                     'Betim - Planta' => 'Betim - Planta', 
@@ -49,15 +49,15 @@
                     , ['placeholder' => 'awesome']);!!}
                     
                 </div>
-                <div class="col-6">
+                <div class="col-sm-12 col-md-6">
                     <div class="">
-                        {!! Form::select('shirtSize',['' => 'TAMANHO DA SUA CAMISA', 'P' => 'P', 'PP' => 'PP', 'M' => 'M', 'G' => 'G', 'GG' => 'GG' ]);!!}
+                        {!! Form::select('shirtSize',['' => 'TAMANHO DA SUA CAMISA', 'PP' => 'PP', 'P' => 'P',  'M' => 'M', 'G' => 'G', 'GG' => 'GG' ]);!!}
                     </div>
                     
                 </div>
             </div>
             <div>
-                <p><b>DIGITE 1(UMA) PALAVRA QUE REPRESENTE O SEU SENTIMENTO DE ESTAR NO GRUPO MOPAR.</b></p>
+                <p class="customLabel"><b>DIGITE 1(UMA) PALAVRA QUE REPRESENTE O SEU SENTIMENTO DE ESTAR NO GRUPO MOPAR.</b></p>
             </div>
             
             <div class="form-group">

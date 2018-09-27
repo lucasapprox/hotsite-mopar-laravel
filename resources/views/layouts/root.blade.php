@@ -36,7 +36,44 @@
 </head>
 <link href="{{ asset('css/root.css') }}" rel="stylesheet">
 <body>
-        <div class="container-fluid">
+        <div class="container-fluid" style="display:grid;">
+                <div class="row container-fluid">
+                    <div class="col-md-12 container-root">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row container-fluid">
+                                    <h1><p class="pMargin">PRA VOCÊ</p><p class="pMargin"><b>O QUE SIGNIFICA</b></p><P>A MOPAR?</P></h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <main class="">
+                                            @yield('content');
+                                        </main>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mobileDiv" style="position:relative">
+                                <div class="col-sm-6 col-md-12 col-xs-6 mobileImg" style="position:relative">
+                                    
+                                    <img id="img1" src="images/itens1.png" alt="">
+                                    
+                                </div>
+                                <div class="col-sm-6 col-md-12 col-xs-6 mobileImg" id="div1">
+                                    
+                                    <img id="img2" src="images/branca.png" alt="">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        {{-- <div class="container-fluid">
                 <div class="row container-root">
                     <div class="col-md-8">
                             <h1><p>PRA VOCÊ</p><p><b>O QUE SIGNIFICA</b></p><P>A MOPAR?</P></h1>
@@ -61,34 +98,10 @@
                             
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
 
 
-    {{-- <div id="app" class="container-root">
-        <div class="h1-root">
-            <div class="col-8 col-lg-8 col-sm-12 col-xs-12">
-                <h1><p>PRA VOCÊ</p><p><b>O QUE SIGNIFICA</b></p><P>A MOPAR?</P></h1>
-            </div>
-            <div class="col-4 col-lg-4 col-sm-12">
-                <div class="">
-                    <img id="image1" src="images/itens1.png" alt="">
-                    logo
-                </div>
-            </div>
-            
-        </div>
-        <div class="row">
-            <main class="py-4 col col-lg-6 col-sm-12">
-                @yield('content')
-            </main>
-            <div class="col col-lg-6 col-sm-12">
-                <img id="image2" src="images/branca.png" alt="">
-            </div>
-        </div>
-        
-        
-        
-    </div> --}}
+    
 </body>
 </html>

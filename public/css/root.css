@@ -1,11 +1,29 @@
+@font-face {
+    font-family: "Futura Lt BT Light";
+    src: url("../fonts/FuturaLtBTLight.ttf");
+  }
+
+@font-face {
+    font-family: "FuturaLT-Bold";
+    src: url("../fonts/FuturaLT-Bold.otf");
+}
+  
+@font-face {
+    font-family: "FuturaLT";
+    src: url("../fonts/FuturaLT.otf");
+}
+
 * {
     box-sizing: border-box;
 }
 
 body{
     background-image: url("../images/hotsite-03.jpg");
+ 
     
 }
+
+
 
 .container-root{
     padding: 100px;
@@ -17,8 +35,14 @@ body{
 
 }
 
+.customLabel{
+    font-family: "FuturaLT-Bold";
+}
+
 h1{
-    font-size:300%;
+    font-size:8vh;
+    font-family: 'FuturaLT';
+    
 }
 
 select{
@@ -28,13 +52,20 @@ select{
     height: calc(2.25rem + 15px);
     width: 100%;
     font: 400 13.3333px Arial;
-    opacity: 1;
     padding-top: 0.375rem;
     padding-right: 0.75rem;
     padding-bottom: 0.375rem;
     padding-left: 0.75rem;
+    
+    
+
+    opacity:0.70;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity=70);
 
 }
+
+
 
 .form-control{
     border-radius: 50px; 
@@ -50,6 +81,7 @@ select{
     font-size: 24px; 
     border-radius: 50px; 
     border-width: 1px;
+    font-family: 'Futura Lt BT Light';
 }
 
 .btn-custom:hover {
@@ -64,17 +96,56 @@ select{
     color: rgba(252, 252, 252, 1);
 }
 
-.img{
+#img1{
     position: relative;
-    right: 0px;
+    right: -400px;
     padding: 10px;
     
     
 }
-/*
-#image2{
+
+#img2{
+    position: relative;
+    right: -34px;
+    top: 350px;
+    padding: 10px;
     
-    position:absolute;
-    top: 60%;
-    right: 0%; 
-} */
+    
+    
+}
+
+#div1{
+    
+    
+    height: 100%;
+    
+}
+
+.pMargin{
+    margin-bottom: 0rem;
+}
+@media only screen and (max-width: 777px) {
+    .mobileImg{
+        width: 100%;
+    }
+    #img1{
+       
+        right: unset;
+        padding: unset;  
+        float: left;
+        
+        margin: 0px;
+
+    }
+    #img2{
+       
+        right: unset;
+        top: unset;
+        padding: unset;
+        float: left;
+        width: 100%;
+        margin: 20px;
+        
+        
+    }
+}
