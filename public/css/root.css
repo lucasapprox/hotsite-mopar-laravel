@@ -149,3 +149,53 @@ select{
         
     }
 }
+
+@media only screen and (max-width: 565px) {
+    h1{
+        font-size: 5vh;
+    }
+
+    .btn-custom{
+        width: 100%;
+    }
+
+    .container-root{
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    h1{
+        font-size: 4.5vh;
+    }
+
+    .btn-custom{
+        width: 100%;
+    }
+
+    .container-root{
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-right: 0;
+    }
+
+    .container-fluid{
+        padding-left: 7px;
+        padding-right: 0px;
+    }
+
+    .adjust{
+        align-content: center;
+        text-align: center;
+        padding-left: 50px !important;
+    }
+
+    .customLabel{
+        font-size: 2vh;
+    }
+
+    .textCenter{
+        text-align: center;
+    }
+
+}

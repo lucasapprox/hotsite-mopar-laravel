@@ -11,7 +11,10 @@
     <!-- ... -->
     
     <div class="container-fluid">
-            <p class="customLabel"><b>PREENCHA OS CAMPOS COM SEUS DADOS PESSOAIS</b></p>
+            <div class="textCenter">
+                <p class="customLabel"><b>PREENCHA OS CAMPOS COM SEUS DADOS PESSOAIS</b></p>
+            </div>
+            
             <div>
                 @if($errors->any())
                     <ul class="alert alert-danger">
@@ -56,12 +59,12 @@
                     
                 </div>
             </div>
-            <div>
-                <p class="customLabel"><b>DIGITE 1(UMA) PALAVRA QUE REPRESENTE O SEU SENTIMENTO DE ESTAR NO GRUPO MOPAR.</b></p>
+            <div class="textCenter">
+                <p class="customLabel"><b>DIGITE 1(UMA) PALAVRA QUE REPRESENTE PARA VOCÊ, QUAL É A MAIOR FORÇA DO TIME MOPAR.</b></p>
             </div>
             
             <div class="form-group">
-                <input type="text" class="form-control" id="word" name="word" value="{{ old('word') }}" placeholder="DIGITE UMA PALAVRA QUE REPRESENTA SEU SENTIMENTO COM A MOPAR">
+                <input type="text" class="form-control" id="word" name="word" value="{{ old('word') }}" placeholder="DIGITE UMA PALAVRA QUE REPRESENTE PARA VOCÊ, QUAL É A MAIOR FORÇA DO TIME MOPAR">
             </div>
             <button class="btn btn-custom" onclick="success()">ENVIAR PALAVRA</button>       
         </div>

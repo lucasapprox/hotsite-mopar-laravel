@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Mopar</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -41,8 +41,8 @@
                     <div class="col-md-12 container-root">
                         <div class="row">
                             <div class="col-md-8">
-                                <div class="row container-fluid">
-                                    <h1><p class="pMargin">PRA VOCÊ</p><p class="pMargin"><b>O QUE SIGNIFICA</b></p><P>A MOPAR?</P></h1>
+                                <div class="row container-fluid adjust">
+                                    <h1><p class="pMargin">PARA VOCÊ,</p><p class="pMargin"><b>QUAL É A MAIOR FORÇA</b></p><P>DO TIME MOPAR?</P></h1>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
